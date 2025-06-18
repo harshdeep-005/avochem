@@ -134,16 +134,29 @@ body {
 
 /* ✅ Responsive */
 @media (max-width: 768px) {
-  .navbar {
+/*   .navbar {
     flex-direction: row;
     align-items: center;
-  }
+  } */
 
-  .nav-links {
+/*   .nav-links {
     flex-direction: row;
     width: auto;
     gap: 16px;
     padding-top: 0;
+  } */
+  .logo img {
+    height: 35px;
+  }
+  .navbar {
+     flex-direction: row;
+    padding: 10px 10px;
+  }
+  .nav-links {
+    gap: 10px;
+    font-size: 14px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
 
