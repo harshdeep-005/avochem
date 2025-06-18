@@ -116,9 +116,20 @@ body {
 }
 
 .product .desc {
-  margin-top: 10px;
   display: none;
+  height: 60vh;
+  overflow-y: auto;
+  background-color: #f2f2f2;
+  padding: 16px;
+  border-radius: 10px;
+  margin-top: 12px;
+  line-height: 1.6;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
 }
+
 
 /* ✅ Contact Icons */
 .contact-icons a {
@@ -211,4 +222,58 @@ body {
 .logo img:hover {
   transform: scale(1.05);
   transition: transform 0.2s ease-in-out;
+}
+
+.lang-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 12px;
+}
+
+.lang-toggle button {
+  background-color: white;
+  border: 1px solid #226c2b;
+  color: #226c2b;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.lang-toggle button:hover {
+  background-color: #226c2b;
+  color: white;
+}
+.floating-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #226c2b;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  transition: background 0.3s ease;
+}
+
+.floating-toggle:hover {
+  background-color: #1a531f;
+}
+
+#modalDesc {
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: 16px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+body.modal-open {
+  overflow: hidden;
 }
