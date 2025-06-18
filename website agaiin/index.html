@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AvoChem - Animal Nutrition</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ✅ Fixed Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+  <img src="/assets/logo1.png" alt="AvoChem Logo" />
+</div>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ✅ Home Section -->
+  <section id="home" class="section">
+    <br>
+    <br>
+    <div class="hero-image">
+    <img src="assets/photo-main.png" width="100%" alt="AvoChem Banner" />
+    </div>
+    <h1 style="font-weight: bold;">Welcome to Avochem Nutrition</h1>
+    <p>At Avochem Nutrition, we specialize in high-quality cattle nutrition products designed to enhance health and productivity. Our focus is on providing solutions that meet the nutritional needs of your cattle, ensuring optimal growth and farm efficiency.</p>
+    <div class="socials">
+      <a href="https://www.instagram.com/avochem_nutrition?igsh=MXVjMzE5am41dzJobQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+  </section>
+
+  <!-- ✅ Products Section -->
+  <section id="products" class="section">
+    <br>
+    <br>
+    <h2>Our Products</h2>
+    <br>
+    <br>
+    <!-- <div class="product-grid"> -->
+      <div class="product">
+        <img src="assets/1.jpg" alt="Product 1" onclick="showDescription(this)">
+        <p class="desc">Description for Product 1</p>
+      </div>
+    <br>
+      <div class="product">
+        <img src="assets/2.jpg" alt="Product 2" onclick="showDescription(this)">
+        <p class="desc">Description for Product 2</p>
+      </div>
+    <br>
+      <div class="product">
+        <img src="assets/3.jpg" alt="Product 1" onclick="showDescription(this)">
+        <p class="desc">Description for Product 1</p>
+      </div>
+    <br>
+      <div class="product">
+        <img src="assets/4.jpg" alt="Product 2" onclick="showDescription(this)">
+        <p class="desc">Description for Product 2</p>
+      </div>
+    <br>
+      <div class="product">
+        <img src="assets/5.jpg" alt="Product 1" onclick="showDescription(this)">
+        <p class="desc">Description for Product 1</p>
+      </div>
+    <br>
+      <div class="product">
+        <img src="assets/6.jpg" alt="Product 2" onclick="showDescription(this)">
+        <p class="desc">Description for Product 2</p>
+      </div>
+    <br>
+      <div class="product">
+        <img src="assets/7.jpg" alt="Product 1" onclick="showDescription(this)">
+        <p class="desc">Description for Product 1</p>
+      </div>
+    <br>
+      <div class="product">
+        <img src="assets/8.jpg" alt="Product 2" onclick="showDescription(this)">
+        <p class="desc">Description for Product 2</p>
+      </div>
+    <br>
+      <div class="product">
+        <img src="assets/9.jpg" alt="Product 1" onclick="showDescription(this)">
+        <p class="desc">Description for Product 1</p>
+      </div>
+    <br>
+      <div class="product">
+        <img src="assets/10.jpg" alt="Product 2" onclick="showDescription(this)">
+        <p class="desc">Description for Product 2</p>
+      </div>
+    <br>
+      <div class="product">
+        <img src="assets/11.jpg" alt="Product 1" onclick="showDescription(this)">
+        <p class="desc">Description for Product 1</p>
+      </div>
+    <br>
+      <div class="product">
+        <img src="assets/12.jpg" alt="Product 2" onclick="showDescription(this)">
+        <p class="desc">Description for Product 2</p>
+      </div>
+    <br>
+      <div class="product">
+        <img src="assets/product2.jpg" alt="Product 2" onclick="showDescription(this)">
+        <p class="desc">Description for Product 2</p>
+      </div>
+      <!-- Add more products as needed -->
+    <!-- </div> -->
+  </section>
+
+  <!-- ✅ About Section -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>For over 3 years, Avochem Nutrition has developed innovative solutions for the health and nutritional needs of the Bovine , Equine & Caprine as Per Their Age, Stage and dry matter portfolio, our products and technologies positive impact the health and wellbeing of millions of animals in India. We provide the service & quality that enables our customers to win with their business Targets and Avochem continuously Building a reputation for delivering results for all of our Customers. Avochem Nutrition's VISION is to Develop Faith into Customers Mind and Delivering a message that each Customer Definitely gets benefits to Use World Class Quality Products. The company is Focusing on the Pull Sale.</p>
+  </section>
+
+  <!-- ✅ Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <div class="contact-icons">
+      <a href="tel:+917087000713"><i class="fas fa-phone"></i></a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=avochemnutrition@gmail.com&su=Product%20Inquiry&body=I%20am%20interested%20in%20your%20animal%20nutrition%20products." target="_blank">
+  <i class="fas fa-envelope"></i>
+</a>
+
+      <a href="https://wa.me/917087000713" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </section>
+  <!-- ✅ Modal Description Popup -->
+    <div class="modal-overlay" id="modal">
+    <div class="modal-desc" id="modalDesc"></div>
+    </div>
+
+</body>
+</html>
